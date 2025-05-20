@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog de Node.js y npm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Blog Node.js y npm</a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+        <!-- Entrada 1: Curso completo con resumen y puntos clave -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-primary">Curso Completo: Aprende Node.js y Express - Curso desde Cero</h2>
+                <p class="card-subtitle mb-3 text-muted"><em>Resumen de una línea:</em> Este curso enseña los
+                    fundamentos de Node.js y Express para el desarrollo web backend, desde la instalación y conceptos
+                    básicos hasta la creación de un servidor y API funcionales.</p>
+
+                <h4 class="mt-4 text-secondary">Puntos clave:</h4>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">Introducción a Node.js: Entorno de ejecución de JavaScript, eventos
+                        síncronos y asíncronos.</li>
+                    <li class="list-group-item">Manejo de módulos en Node.js: Importación y exportación, módulos
+                        built-in.</li>
+                    <li class="list-group-item">Desarrollo de servidores con Node.js y Express: Creación de rutas,
+                        manejo de solicitudes HTTP (GET, POST, PUT, DELETE), parámetros URL y query.</li>
+                    <li class="list-group-item">Uso de npm: Instalación y desinstalación de paquetes, manejo de
+                        dependencias.</li>
+                    <li class="list-group-item">Trabajo con JSON: Conversión entre objetos JavaScript y formato JSON,
+                        uso en solicitudes y respuestas HTTP.</li>
+                </ul>
+
+                <h4 class="mt-4 text-secondary">Resumen del curso:</h4>
+                <p>
+                    Este curso proporciona una introducción completa al desarrollo backend con Node.js y Express.
+                    Comienza con una explicación detallada de Node.js, incluyendo su naturaleza como entorno de
+                    ejecución de JavaScript orientado a eventos asíncronos, la diferencia entre eventos síncronos y
+                    asíncronos, y la importancia de la programación asíncrona para la creación de aplicaciones
+                    escalables y en tiempo real.
+                </p>
+                <p>
+                    Se explora el concepto de módulos, su importancia para la organización y reutilización del código, y
+                    cómo importar y exportar elementos entre módulos. Se cubren los módulos built-in de Node.js como
+                    http, fs, process, events, y timers, mostrando ejemplos prácticos de su uso.
+                </p>
+                <p>
+                    El curso continúa con una introducción a npm (Node Package Manager), explicando conceptos como
+                    paquetes, módulos y dependencias. Se guía al estudiante en la creación de un archivo package.json,
+                    la instalación y desinstalación de paquetes, y el manejo de dependencias de desarrollo.
+                </p>
+                <p>
+                    Se dedica una sección significativa a JSON (JavaScript Object Notation), su sintaxis, y su uso en la
+                    transmisión de datos entre el cliente y el servidor. Se muestran ejemplos de cómo convertir objetos
+                    JavaScript a JSON y viceversa utilizando las funciones JSON.stringify() y JSON.parse().
+                </p>
+                <p>
+                    La parte central del curso se centra en el desarrollo de servidores con Node.js y, posteriormente,
+                    con Express. Se explica el modelo cliente-servidor y el protocolo HTTP, incluyendo los métodos HTTP
+                    (GET, POST, PUT, DELETE) y los códigos de estado HTTP. Se construye un servidor básico con el módulo
+                    http de Node.js para comprender los fundamentos, y luego se introduce Express para simplificar el
+                    proceso de creación de rutas y manejo de solicitudes.
+                </p>
+                <p>
+                    Se enseña cómo definir rutas utilizando diferentes métodos HTTP y cómo extraer información de la
+                    URL, incluyendo parámetros de ruta y parámetros query. Se profundiza en el manejo de solicitudes
+                    POST para agregar nuevos recursos, PUT para actualizar recursos, PATCH para actualizar propiedades
+                    específicas, y DELETE para eliminar recursos. Se utilizan ejemplos prácticos para ilustrar cada
+                    concepto, incluyendo la creación de una API simple para gestionar información de cursos.
+                </p>
+                <p>
+                    Finalmente, se introduce Nodemon para automatizar el reinicio del servidor al detectar cambios en
+                    los archivos, mejorando la eficiencia del desarrollo. El curso concluye con una revisión de los
+                    conceptos clave y un desafío para el estudiante de expandir el proyecto creado.
+                </p>
+            </div>
+        </div>
+
+        <!-- Entrada 2: Numerales 1 a 4 -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-primary">NodeJS - Desarrollo Web</h2>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Qué es NodeJS?</h4>
+                    <p>
+                        Node.js es un entorno de ejecución de JavaScript que permite usar este lenguaje fuera del
+                        navegador, especialmente para crear servidores y aplicaciones backend. Está basado en el motor
+                        V8 de Google Chrome y utiliza un modelo orientado a eventos y programación asíncrona, lo que
+                        facilita manejar muchas operaciones concurrentes sin bloquear el sistema.
+                    </p>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">Diferencias entre JavaScript en frontend y en backend</h4>
+                    <p>
+                        JavaScript en el frontend se ejecuta dentro del navegador del usuario y se usa para manejar la
+                        interacción con la interfaz gráfica, validar formularios, animaciones, etc. En el backend (con
+                        Node.js), JavaScript corre en el servidor para procesar datos, manejar bases de datos,
+                        autenticar usuarios y responder a solicitudes HTTP.
+                    </p>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">Ventajas y desventajas de usar JavaScript en backend</h4>
+                    <p><strong>Ventajas:</strong> Es un lenguaje conocido para muchos desarrolladores, permite usar el
+                        mismo lenguaje en frontend y backend, facilita la creación de aplicaciones rápidas y escalables
+                        con su modelo asíncrono.</p>
+                    <p><strong>Desventajas:</strong> No es ideal para tareas que requieren mucho procesamiento intensivo
+                        (CPU), su modelo asíncrono puede ser difícil de entender para principiantes y la gestión de
+                        callbacks/promesas puede complicar el código.</p>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">Instalación y configuración de Node.js</h4>
+                    <ol class="mb-3">
+                        <li>Ir al sitio oficial: <a href="https://nodejs.org" target="_blank">nodejs.org</a></li>
+                        <li>Elegir la versión LTS (recomendada para la mayoría).</li>
+                        <li>Descargar el instalador y seguir los pasos.</li>
+                        <li>Una vez instalado, abrir una terminal y verificar:
+                            <ul>
+                                <li><code>node -v</code>: muestra la versión de Node.js</li>
+                                <li><code>npm -v</code>: muestra la versión del gestor de paquetes npm</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="assets/imagenes/descargar_node.jpg" alt="Página oficial para descarga"
+                                class="img-fluid rounded shadow imagen_node">
+                            <div class="text-center small text-muted mt-1">Página oficial para descarga</div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="assets/imagenes/instalando_node.jpg" alt="Instalador en proceso"
+                                class="img-fluid rounded shadow imagen_node">
+                            <div class="text-center small text-muted mt-1">Instalador en proceso</div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="assets/imagenes/version_node.jpg" alt="Terminal mostrando versión de node"
+                                class="img-fluid rounded shadow imagen_node">
+                            <div class="text-center small text-muted mt-1">Terminal mostrando versión de node</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-primary">Paso a paso: Importar y exportar módulos en Node.js</h2>
+                <ol class="mb-3">
+                    <li>
+                        <strong>Crear un archivo para exportar:</strong>
+                        <p>Por ejemplo, <code>exportar.js</code> con una función y una variable:</p>
+                        <pre class="bg-light p-2 rounded"><code>// exportar.js
+function saludar(nombre) {
+    return `Hola, ${nombre}!`;
+}
+let despedida = "¡Hasta luego!";
+module.exports = { saludar, despedida };</code></pre>
+                        <div class="mb-2">
+                            <img src="assets/imagenes/exportar_node.jpg" alt="Archivo exportar.js"
+                                class="img-fluid rounded shadow">
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Crear un archivo para importar:</strong>
+                        <p>Por ejemplo, <code>importar.js</code> donde importamos lo anterior:</p>
+                        <pre class="bg-light p-2 rounded"><code>// importar.js
+let { saludar, despedida } = require('./saludos');
+console.log(saludar('Juan'));
+console.log(despedida);</code></pre>
+                        <div class="mb-2">
+                            <img src="assets/imagenes/importar_node.jpg" alt="importar.js"
+                                class="img-fluid rounded shadow">
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Ejecutar el archivo principal:</strong>
+                        <p>En la terminal, ejecuta <code>node importar.js</code> y observa el resultado:</p>
+                        <div class="mb-2">
+                            <img src="assets/imagenes/consola_node.jpg" alt="Ejecución en terminal"
+                                class="img-fluid rounded shadow">
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- Entrada 3: Numerales 7 a 10 -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-primary">npm</h2>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Qué es npm y quién lo mantiene?</h4>
+                    <p>
+                        npm (Node Package Manager) es el gestor de paquetes oficial para Node.js. Permite instalar,
+                        actualizar y gestionar librerías o módulos que facilitan el desarrollo. npm es mantenido por la
+                        empresa npm, Inc., que ahora forma parte de GitHub/Microsoft.
+                    </p>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Qué es Yarn y cómo se diferencia de npm?</h4>
+                    <p>
+                        Yarn es otro gestor de paquetes para Node.js, desarrollado por Facebook para mejorar algunos
+                        aspectos de npm como la velocidad, la seguridad y la gestión de dependencias. Yarn usa un
+                        archivo <code>yarn.lock</code> que garantiza versiones fijas, y tiene comandos y funcionamiento
+                        similar a npm.
+                    </p>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">Diferencias entre yarn.lock y package-lock.json</h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item"><strong>yarn.lock:</strong> Archivo que fija las versiones exactas
+                            de las dependencias instaladas con Yarn.</li>
+                        <li class="list-group-item"><strong>package-lock.json:</strong> Archivo equivalente pero usado
+                            por npm para garantizar reproducibilidad de instalaciones.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">Comandos npm útiles</h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item"><code>npm start</code>: Ejecuta el script "start" definido en
+                            package.json para iniciar la aplicación.</li>
+                        <li class="list-group-item"><code>npm test</code>: Ejecuta los tests definidos en package.json.
+                        </li>
+                        <li class="list-group-item"><code>npm uninstall &lt;paquete&gt;</code>: Desinstala un paquete.
+                        </li>
+                        <li class="list-group-item"><code>npm update</code>: Actualiza los paquetes instalados a su
+                            última versión compatible.</li>
+                        <li class="list-group-item"><code>npm list</code>: Muestra los paquetes instalados en el
+                            proyecto.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Para qué sirven las banderas -flags- en npm?</h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item"><code>-g</code>: Instala un paquete de forma global en el sistema
+                            (disponible en cualquier proyecto o terminal).</li>
+                        <li class="list-group-item"><code>--save</code>: (Históricamente) Guardaba el paquete en las
+                            dependencias de package.json, ahora npm lo hace por defecto.</li>
+                        <li class="list-group-item"><code>-D</code> o <code>--save-dev</code>: Guarda el paquete en las
+                            dependencias de desarrollo (devDependencies), para usar solo en desarrollo.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <!-- Entrada 4: Módulos npm y uso práctico -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-primary">Módulos npm y Uso Práctico</h2>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Para qué sirven estos módulos npm?</h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item"><strong>express:</strong> Framework para construir servidores y APIs
+                            web en Node.js de forma rápida y sencilla.</li>
+                        <li class="list-group-item"><strong>mongodb:</strong> Driver oficial para conectar Node.js con
+                            bases de datos MongoDB.</li>
+                        <li class="list-group-item"><strong>mongoose:</strong> ORM para MongoDB que facilita definir
+                            esquemas y trabajar con datos.</li>
+                        <li class="list-group-item"><strong>path:</strong> Módulo built-in que ayuda a manejar rutas y
+                            directorios en el sistema de archivos.</li>
+                        <li class="list-group-item"><strong>router:</strong> Middleware para definir rutas en
+                            aplicaciones Express (aunque a veces viene integrado en Express).</li>
+                        <li class="list-group-item"><strong>nodemon:</strong> Herramienta para reiniciar automáticamente
+                            el servidor cuando detecta cambios en los archivos.</li>
+                        <li class="list-group-item"><strong>cors:</strong> Middleware que habilita Cross-Origin Resource
+                            Sharing para controlar acceso a recursos desde otros dominios.</li>
+                        <li class="list-group-item"><strong>http:</strong> Módulo built-in para crear servidores HTTP
+                            sin usar frameworks externos.</li>
+                        <li class="list-group-item"><strong>multer:</strong> Middleware para manejar subida de archivos
+                            (multipart/form-data) en Express.</li>
+                        <li class="list-group-item"><strong>morgan:</strong> Middleware para registrar peticiones HTTP
+                            en la consola, útil para depuración.</li>
+                        <li class="list-group-item"><strong>prettier:</strong> Formateador de código para mantener un
+                            estilo consistente.</li>
+                        <li class="list-group-item"><strong>debug:</strong> Utilidad para generar mensajes de depuración
+                            de forma sencilla y controlada.</li>
+                        <li class="list-group-item"><strong>jade (pug):</strong> Motor de plantillas para generar HTML
+                            dinámico desde plantillas en Node.js.</li>
+                        <li class="list-group-item"><strong>passport:</strong> Middleware para autenticación, compatible
+                            con muchas estrategias (Google, Facebook, local, etc.).</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Existen paquetes para validar formularios y exportar o importar
+                        archivos?</h4>
+                    <p>Sí, existen muchos paquetes que facilitan estas tareas:</p>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item"><strong>Validación de formularios:</strong>
+                            <code>express-validator</code>, <code>joi</code>.
+                        </li>
+                        <li class="list-group-item"><strong>Exportar a PDF:</strong> <code>pdfkit</code>,
+                            <code>puppeteer</code> (generar PDFs a partir de HTML).
+                        </li>
+                        <li class="list-group-item"><strong>Exportar a Excel:</strong> <code>exceljs</code>,
+                            <code>xlsx</code>.
+                        </li>
+                        <li class="list-group-item"><strong>Cargar desde PDF o Excel:</strong> <code>pdf-parse</code>
+                            para PDFs, <code>xlsx</code> para Excel.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">3 módulos interesantes para probar</h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item"><strong>dotenv:</strong> Permite cargar variables de entorno desde
+                            un archivo .env para separar configuración sensible del código.</li>
+                        <li class="list-group-item"><strong>socket.io:</strong> Facilita la comunicación en tiempo real
+                            (WebSocket) entre cliente y servidor.</li>
+                        <li class="list-group-item"><strong>bcrypt:</strong> Librería para encriptar contraseñas y
+                            manejar seguridad en autenticación.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Cómo se utiliza un módulo instalado?</h4>
+                    <p>Una vez instalado con <code>npm install nombre-modulo</code>, lo importamos en nuestro archivo
+                        JavaScript con:</p>
+                    <pre class="bg-light p-2 rounded"><code>let modulo = require('nombre-modulo');</code></pre>
+                    <p>Luego usamos las funciones o clases que provee ese módulo en nuestro código.</p>
+                </section>
+
+                <section class="mb-4">
+                    <h4 class="text-secondary">¿Cómo indicar que un módulo es solo para desarrollo?</h4>
+                    <p>Al instalar un módulo que solo se usará durante el desarrollo (por ejemplo, nodemon o prettier),
+                        se usa la bandera <code>-D</code> o <code>--save-dev</code>, así:</p>
+                    <pre class="bg-light p-2 rounded"><code>npm install nombre-modulo -D</code></pre>
+                    <p>Esto agrega el módulo en la sección <code>devDependencies</code> de <code>package.json</code>, y
+                        no se instala en producción con un comando como <code>npm install --production</code>.</p>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <small>&copy; 2025 Blog Node.js y npm. Todos los derechos reservados.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
